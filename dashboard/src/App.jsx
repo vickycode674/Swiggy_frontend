@@ -1,12 +1,16 @@
-// import React from "react";
+import React from "react";
 import LandingPages from "./vendor_dashboard/Components/pages/LandingPages";
+import {Routes,Route} from 'react-router-dom';
+
 
 import "./App.css";
 
 const App = ()=>{
   return  (
     <div>
-      <LandingPages/> 
+      <Routes>
+         <Route path='/' element={<LandingPages />} />
+      </Routes>
     </div>
   )
 }
