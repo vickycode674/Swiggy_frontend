@@ -1,11 +1,11 @@
 
 
-const Sidebar = () => {
+const Sidebar = ({ShowFirmHandler, showproductHandler}) => {
   return (
     <div className="sideBarSection">
         <ul>
-           <li>Add Firm</li>   
-           <li>Add Product </li>
+           <li onClick={ShowFirmHandler} style={{ cursor: 'pointer' }}>Add Firm</li>   
+           <li onClick={ showproductHandler}  style={{cursor: 'pointer' }}>Add Product </li>
            <li>All Products</li>
            <li>User Details</li> 
         </ul> 
@@ -14,4 +14,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Sidebar;

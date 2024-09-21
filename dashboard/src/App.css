@@ -68,8 +68,7 @@ body {
     align-items: center;
     flex-direction: column;
     /* position: absolute; */
-
-    margin-top: -300px;  
+      margin-top: -1px;
 }
 
 .RegisterSection{
@@ -80,8 +79,6 @@ body {
     align-items: center;
     flex-direction: column;
     /* position: absolute; */
-
-    margin-top: -300px;  
 }
 .authForm label{
     width: 100%;
@@ -92,7 +89,7 @@ body {
     width: 100%;
     max-width: 50%;
     border: 1px solid red;
-    /* margin-top: -200px; */
+    margin-top: -150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -133,15 +130,49 @@ body {
 
 .tableForm input{
     width: 100%;
-    max-width: 55%;
+    max-width: 85%;
     height: 1.4rem;   
 }
 
 .tableForm label{
     width: 100%;
-    max-width: 55%;
+    max-width: 85%;
     font-weight: 600;
 }
+
+/* checkbox for inputs */
+
+.checkInp{
+    border: 1px solid red;
+    width: 100%;
+    max-width: 85%;
+    display: flex;
+}
+
+.inputsContainer{
+width: 100%;
+display: flex;
+}
+
+
+.checkboxContainer{
+width: 100%;
+display: flex;
+max-width: 50%;
+justify-content: center;
+align-items: center;
+}
+
+.checkboxContainer label{
+    border :1px solid blue;
+    margin: 12px;
+    display: inline;
+}
+
+.checkboxContainer inputs{
+margin-left: -180px;
+}
+
 
 
 

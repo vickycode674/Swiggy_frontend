@@ -7,8 +7,8 @@ const NavBar = ({showLoginHandler,showRegisterHandler}) => {
           Vendor Dashboard
        </div>
        <div className="userAuth">
-        <span onClick={showLoginHandler}>Login</span> <br/>
-        <span onClick={showRegisterHandler}>Register</span>
+        <span  style={{ cursor: 'pointer' }}  onClick={showLoginHandler}>Login /</span> 
+        <span  style={{ cursor: 'pointer' }} onClick={showRegisterHandler}>Register</span>
        </div>
     </div>
   )

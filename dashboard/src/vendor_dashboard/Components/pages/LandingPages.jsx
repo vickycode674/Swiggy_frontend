@@ -11,15 +11,37 @@ const LandingPages = () => {
 
   const [showLogin,setShowLogin]= useState(false);
   const [showRegister,setShowRegister] =useState(false);
+  const [showFirm,setShowFirm] = useState(false);
+  const [showProduct,setShowProduct] = useState(false);
 
    const showLoginHandler =()=>{
       setShowLogin(true)
       setShowRegister(false)
+      setShowFirm(false)
+      setShowProduct(false)
+
    }
 
    const showRegisterHandler =()=>{
     setShowRegister(true)
     setShowLogin(false)
+    setShowFirm(false)
+    setShowProduct(false)
+
+   }
+
+   const ShowFirmHandler =()=>{
+    setShowFirm(true)
+    setShowRegister(false)
+    setShowLogin(false)
+    setShowProduct(false)
+   }
+
+   const showproductHandler = ()=>{
+    setShowRegister(false)
+    setShowLogin(false)
+    setShowFirm(false)
+    setShowProduct(true)
    }
 
 
@@ -29,16 +51,19 @@ const LandingPages = () => {
         <NavBar showLoginHandler={showLoginHandler} showRegisterHandler={showRegisterHandler}/> 
 
         <div className="collectionSection">
-        <Sidebar/>
+        <Sidebar ShowFirmHandler={ShowFirmHandler} showproductHandler={showproductHandler} />
 
-
-        {showLogin && <Login/> } 
-        {showRegister && <Register/> }
-        {/* <AddFirm/> */}
         
-   
+         {/* <Login /> */}
+  
+         {showLogin && <Login/> } 
+        {showRegister && <Register/> }
+        
+        {/* <AddFirm/> */}
+        {showFirm && <AddFirm />}
 
         {/* <AddProduct /> */}
+        {showProduct && <AddProduct />}
         </div>
 
     </section>
